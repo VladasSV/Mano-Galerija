@@ -1,0 +1,67 @@
+@font-face {
+ font-family: "ManoFontas";    
+ src: url(../font/Kingsman.ttf);
+}
+
+* {
+margin: 0;    
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+ background-color: black;  
+ color: aliceblue;
+ overflow-x: hidden; 
+}
+
+h1 {
+ font-family: "ManoFontas"; 
+ font-size: 11vw;  
+ text-align: center;
+ padding: 20px;
+}
+
+footer {
+   font-family: "ManoFontas";
+   font-size: 24px;
+   text-align: center;
+   background-color: #222;
+   padding: 40px 20px;
+}
+
+ul {
+ list-style: none;   
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ background-color: #222;
+}
+
+li {
+  height: 30vh;  
+  flex-grow: 1;
+
+}
+
+li:hover{
+  z-index: 1;  
+}
+
+li:last-child {
+flex-grow: 0;
+}
+
+img {
+  max-height: 100%;  
+  min-width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%); brightness (75%)
+  transition: all: 250ms;
+}
+img:hover {
+  filter: grayscale(0%) brightness(100%);
+  transform: scale(1.1);
+  box-shadow: 0 0 50; #000;
+  
+}
